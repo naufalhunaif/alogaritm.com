@@ -11,7 +11,6 @@ npm install
 npm run dev
 ```
 
-Berkas halaman dan aset berada di `public/`. Setelah tampilan diperiksa, jalankan
-`npm run deploy`, lalu sambungkan domain `alogaritm.com` ke Worker di Cloudflare.
-Domain belum dicantumkan sebagai custom domain di `wrangler.jsonc`, sehingga
-perintah deploy tidak langsung mengambil alih situs yang sedang aktif.
+Berkas halaman dan aset berada di `public/`. Jalankan `npm run deploy` untuk
+menerbitkan Worker dan menghubungkan custom domain `alogaritm.com` di Cloudflare.
+Cloudflare akan mengelola record DNS dan sertifikat untuk custom domain ini.
